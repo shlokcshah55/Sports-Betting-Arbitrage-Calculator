@@ -135,13 +135,14 @@ class View:
                                    text=f"Bet {round(data.getHomeAmount(),2)} on {data.getHomeTeam()} to Win on {data.getHomeSite()}. If they win you stand to win {round(data.getProfitHomeWins(),2)}",
                                    font=("Arial", 12), foreground="white", background="#2c3e50", wraplength=460)
         home_bet_label.grid(row=1, column=0, padx=10, pady=10, sticky="w")
-        print('now got here')
+
         # Information label for away team betting details
         away_bet_label = ttk.Label(frame,
                                    text=f"Bet {round(data.getAwayAmount(),2)} on {data.getAwayTeam()} to Win on {data.getAwaySite()}. If they win you stand to win {round(data.getProfitAwayWins(),2)}",
                                    font=("Arial", 12), foreground="white", background="#2c3e50", wraplength=430)
         away_bet_label.grid(row=2, column=0, padx=10, pady=10, sticky="w")
 
+        # Informtation label for draw if exists
         if data.getDrawAvailable():
             draw_bet_label = ttk.Label(frame,
                                        text=f"Bet {round(data.getDrawAmount(), 2)} on a draw on {data.getDrawSite()}. If they win you stand to win {round(data.getProfitAwayWins(), 2)}",
@@ -151,16 +152,6 @@ class View:
         # Close button styled with padding and rounded edges
         close_button = ttk.Button(frame, text="Close", command=popup.destroy, style="TButton")
         close_button.grid(row=4, column=0, padx=10, pady=20)
-
-        # Create a style for the button to make it look better
-        # style = ttk.Style()
-        # style.configure("TButton",
-        #                 font=("Arial", 12),
-        #                 padding=10,
-        #                 background="#2980B9",  # Blue background for the button
-        #                 foreground="white",
-        #                 width=20)
-        # style.map("TButton", background=[("active", "#3498DB")])  # Change color on hover
 
         # Make sure the popup is centered on the screen
         window_width = 500
