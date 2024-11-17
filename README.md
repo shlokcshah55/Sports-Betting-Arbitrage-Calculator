@@ -1,5 +1,4 @@
-# Python Application with Tkinter, JSON, and NumPy
-
+# Sports Betting Arbitrage calculator 
 This Python application utilizes **Tkinter** for the user interface, **JSON** for data handling, and **NumPy** for numerical computation.
 This is a sports betting arbitrage calculator that provides numerous upcoming sporting events and calculates where arbitrage is possible across these.
 The output will be the amount of money to bet on which website and the guaranteed amount you will make
@@ -15,17 +14,14 @@ Ensure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository_url>
+   git clone [<repository_url>](https://github.com/shlokcshah55/Sports-Betting-Arbitrage-Calculator.git)
    
-2. **Navigate to the right folder**:
-   ```bash
-   cd <project directory>
 
-3. **Create Virtual Environment (Optional but reccomended)**:
+2. **Create Virtual Environment (Optional but reccomended)**:
    ```bash
    python -m venv venv
 
-4. **Activate virtual environment**:
+3. **Activate virtual environment**:
 - On windows:
    ```bash
    venv\Scripts\activate
@@ -33,15 +29,15 @@ Ensure you have the following installed:
     ```bash
     source venv/bin/activate
 
-5. **Install Required Dependencies**:
+4. **Install Required Dependencies**:
     ```bash
     pip install -r requirements.txt
    
-6. **Running the Application**:
+5. **Running the Application**:
     ```bash
    python main.py
 
-7. **Example Usage**:
+6. **Example Usage**:
 - Select a sport from the dropdown box
 - Click the get events button
 - Select an event from the dropdown box
@@ -51,7 +47,7 @@ Ensure you have the following installed:
 - If multiple events currently do not have arbitrage (likely) and you want to see a working method select the "Example 3 event" or "Examples 2 event" and press calculate
 - This will show you how the result will look
 
-8. **Strategies Used**:
+7. **Strategies Used**:
 This is described in more detail in the respective functions comments but I will give a brief summary below
 - There are 2 options we have allowed: A Risky bet and a Safe Bet
 - A Risky bet maximises the expected return but will skew the calculations to place more money on the more likely event
